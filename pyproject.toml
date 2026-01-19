@@ -1,0 +1,25 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "wandb-plot-utils"
+version = "0.0.1"
+description = "Utilities for plotting Weights & Biases experiments"
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+authors = [
+  { name = "Sicelukwanda Zwane", email = "sicelukwanda.zwane@gmail.com" },
+]
+dependencies = [
+  "wandb",
+  "pandas",
+  "plotnine",
+  "matplotlib",
+  "numpy",
+  "seaborn",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/sicelukwanda/wandb-plot-utils"
