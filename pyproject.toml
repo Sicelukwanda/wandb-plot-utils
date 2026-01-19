@@ -19,7 +19,8 @@ dependencies = [
   "matplotlib",
   "numpy",
   "seaborn",
+  "hydra-core",
 ]
 
-[project.urls]
-"Homepage" = "https://github.com/sicelukwanda/wandb-plot-utils"
+[project.scripts]
+wandb-plot = "wandb_plot_utils.cli:main"

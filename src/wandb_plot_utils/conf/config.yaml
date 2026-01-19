@@ -1,0 +1,12 @@
+entity: "sicelukwanda"
+project: "Bellows-arm-rl"
+group: "1721147164230_baselines_REDQ"
+metrics: 
+  - "actor/episode_return"
+  - "actor/actor_steps"
+
+plot:
+  x: "actor/actor_steps"
+  y: "actor/best_so_far"
+  output: "plot.png"
+  title: null
