@@ -58,15 +58,7 @@ def main(cfg: DictConfig):
     plt.gca().spines[['top', 'right']].set_visible(False)
     
     output_path = cfg.plot.output
-    # Resolve user path if needed, though pyplot usually handles it? 
-    # Hydra changes cwd, so relative paths might be tricky if user expects them relative to invocation dir.
-    # Hydra creates a unique output dir per run. 
-    # But for a simple tool, user might expect output in current dir.
-    # By default hydra changes working directory. 
-    # If user provides absolute path, it's fine. 
-    # If relative, it goes into hydra run dir.
-    # We should probably respect hydra's way or print where it is saved.
-    
+
     plt.savefig(output_path, dpi=300, bbox_inches='tight')
     print(f"Plot saved to {os.path.abspath(output_path)}")
 
